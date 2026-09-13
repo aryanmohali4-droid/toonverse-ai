@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toonverse AI - Anime Art Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <span class="logo-icon">✦</span>
+      <span>Toonverse AI</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <span class="badge">Powered by AI</span>
+      <h1>Your imagination, drawn in anime</h1>
+      <p class="subtitle">Describe a character, scene, or mood — Toonverse turns it into striking anime art in seconds.</p>
+    </section>
+
+    <section class="generator-box">
+      <label class="label">Your prompt</label>
+      <textarea id="promptInput" placeholder="A samurai girl with cherry blossoms, sunset, anime style"></textarea>
+
+      <label class="label" style="margin-top:14px;">Style</label>
+      <div class="chips" id="chips">
+        <span class="chip active" data-style="anime style, highly detailed">Anime</span>
+        <span class="chip" data-style="chibi style, cute, small">Chibi</span>
+        <span class="chip" data-style="studio ghibli style, soft colors">Ghibli</span>
+        <span class="chip" data-style="dark fantasy anime style, dramatic lighting">Dark fantasy</span>
+      </div>
+
+      <button id="generateBtn" class="generate-btn">
+        <span id="btnText">Generate</span>
+      </button>
+    </section>
+
+    <section class="result-box">
+      <div id="resultArea" class="result-placeholder">
+        <span>Your image will appear here</span>
+      </div>
+      <button id="downloadBtn" class="download-btn" style="display:none;">Download image</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+                                                                                                          </html>
